@@ -18,7 +18,7 @@ import pulp
 
 # USD
 st = 5
-end = 2000
+end = 1000
 increment = 5
 amounts_usd = list(range(st, end, increment))
 
