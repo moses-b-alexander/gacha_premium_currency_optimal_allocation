@@ -16,6 +16,11 @@
 import matplotlib.pyplot as plt
 import pulp
 
+# add whitespace
+print()
+print()
+print()
+
 # USD
 st = 5
 end = 1000
@@ -127,4 +132,8 @@ plt.show()
 # clear plots
 plt.close("all")
 
+# add whitespace
+print()
+print()
+print()
 
