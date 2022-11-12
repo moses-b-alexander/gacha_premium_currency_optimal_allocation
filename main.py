@@ -6,8 +6,8 @@
 # There is a promotional "first-time" bonus for each amount of premium
 # currency, applied the first time it is bought.
 
-# By changing the prices and values in the ***vals*** dictionary
-# (and ***ft_vals*** if necessary), this script can be used to determine
+# By changing the prices and values in the *vals* dictionary
+# (and *ft_vals* if necessary), this script can be used to determine
 # optimal allocation of funds for other games with premium currencies,
 # using the first-time bonus dictionary and function if first-time bonuses
 # exist in the other games.
@@ -125,9 +125,13 @@ print(primogems_per_usd_ft)
 # plots
 plt.plot(primogems_per_usd_no_ft.keys(), primogems_per_usd_no_ft.values())
 plt.title("No First Time Bonus applied")
+plt.set_xlabel("USD ($)")
+plt.set_ylabel("Premium Currency per USD ($)")
 plt.show()
 plt.plot(primogems_per_usd_ft.keys(), primogems_per_usd_ft.values())
 plt.title("First Time Bonus included")
+plt.set_xlabel("USD ($)")
+plt.set_ylabel("Premium Currency per USD ($)")
 plt.show()
 # clear plots
 plt.close("all")
