@@ -113,14 +113,18 @@ primogems_per_usd_no_ft = {k: round(v / k, 3) for k, v in primogems_no_ft.items(
 primogems_ft = {amt: opt(amt, True)[0] for amt in amounts_usd}
 primogems_per_usd_ft = {k: round(v / k, 3) for k, v in primogems_ft.items()}
 
+# print
 print(primogems_per_usd_no_ft)
 print(primogems_per_usd_ft)
 
+# plots
 plt.plot(primogems_per_usd_no_ft.keys(), primogems_per_usd_no_ft.values())
 plt.title("No First Time Bonus applied")
 plt.show()
 plt.plot(primogems_per_usd_ft.keys(), primogems_per_usd_ft.values())
 plt.title("First Time Bonus included")
 plt.show()
+# clear plots
+plt.close("all")
 
 
